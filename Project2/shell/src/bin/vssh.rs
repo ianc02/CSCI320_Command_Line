@@ -11,6 +11,9 @@ use nix::{sys::wait::waitpid,unistd::{fork, ForkResult, execvp}};
 fn main() {
 
     loop {
+        // https://doc.rust-lang.org/std/env/fn.current_dir.html
+        let path = env::current_dir().unwrap();
+        println!("The current directory is: {}", path.display());
         match line_input(){
             Ok(keep_going) => {
                 if !keep_going {
@@ -22,9 +25,7 @@ fn main() {
             }
         }
     
-    // https://doc.rust-lang.org/std/env/fn.current_dir.html
-    let path = env::current_dir().unwrap();
-    println!("The current directory is: {}", path.display());
+    
     }
     
 }

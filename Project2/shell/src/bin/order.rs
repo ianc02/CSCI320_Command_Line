@@ -10,7 +10,6 @@ fn main() {
     let mut firstPass = false;
     let mut reverse = false;
     for file in &args{
-        println!("{}",file);
         if !firstPass && firstarg.to_string() == "-r".to_string(){
             reverse=true;
             firstPass=true;
