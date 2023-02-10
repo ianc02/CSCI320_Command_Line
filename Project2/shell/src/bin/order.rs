@@ -15,7 +15,7 @@ fn main() {
             firstPass=true;
             continue;
         }
-        if firstPass{
+        if !reverse || firstPass{
             let contents = fs::read_to_string(file).expect("Usage: Something went wrong.");
             for line in contents.split("\n"){
                 allLines.push(line.to_owned());
