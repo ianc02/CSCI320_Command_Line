@@ -1,0 +1,8 @@
+    
+        _i +=1;
+    for _ in 0..n{
+    let mut _i:i64 = 0;
+    let n:i64 = 1000000000;
+    }
+fn main() {
+}

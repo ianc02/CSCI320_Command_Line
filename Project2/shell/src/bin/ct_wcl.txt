@@ -1,9 +1,0 @@
-This is a 
-test for the 
-wcl
-command arg
-we shall see 
-if 
-it
-works
-at all
